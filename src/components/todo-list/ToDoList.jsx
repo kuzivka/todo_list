@@ -12,8 +12,13 @@ export default function ToDoList() {
       <h1 className="list-title">To Do List</h1>
       <AddTodo setTodoList={setTodoList} todoList={todoList} />
       <div className="todos">
-        {JSON.parse(todoList).map((todo) => (
-          <Todo todo={todo} />
+        {JSON.parse(todoList).sort((a,b)=>(a.priority - b.priority)).map((todo) => (
+          <Todo
+            key={todo.id}
+            todo={todo}
+            setTodoList={setTodoList}
+            todoList={todoList}
+          />
         ))}
       </div>
     </div>

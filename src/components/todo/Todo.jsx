@@ -1,13 +1,19 @@
 import React from 'react';
-import './Todo.css'
+import './Todo.css';
 
-export default function Todo({ todo }) {
+export default function Todo({ todo, todoList, setTodoList }) {
+  const handleDelete = () => {
+    const todos = JSON.parse(todoList);
+    setTodoList(JSON.stringify(todos.filter((task) => todo.id !== task.id)));
+  };
+
   return (
-    <div key={todo.id} className="task">
-      <span>{todo.proority}</span>
-      <span>{todo.title}</span>
-      <button className=' close-btn'><span class="material-symbols-outlined">close</span></button>
-      
+    <div className="task">
+      <span className="priority">{todo.priority}</span>
+      <span className="title">{todo.title}</span>
+      <button className="close-btn" onClick={handleDelete}>
+        <span className="material-symbols-outlined">close</span>
+      </button>
     </div>
   );
 }
