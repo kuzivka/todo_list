@@ -1,0 +1,45 @@
+.add-todo-container{
+    display: flex;
+    justify-content: space-between;
+}
+.add-btn {
+  background: none;
+  border: 1px solid #ffd700;
+  border-radius: 5px;
+  color: #ffd700;
+  font-size: 20px;
+  padding: 6px 30px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+}
+.add-btn:hover {
+  background-color: #ffd700;
+  color: #000;
+}
+.title-input,
+.priority-input {
+  border-radius: 3px;
+  background: #fff9;
+  border: none;
+  outline: none;
+  color: #212121b3;
+  padding: 6px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+}
+.title-input {
+  width: 192px;
+}
+.priority-input {
+  width: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

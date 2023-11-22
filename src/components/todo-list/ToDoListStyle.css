@@ -1,0 +1,16 @@
+.todo-list-container {
+  color: #fffc;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  width: 438px;
+  height: 653px;
+  max-height: 90%;
+  padding: 20px;
+   border-radius: 30px;
+  background: url(../../assets/Mask\ Group.png);
+}
+.list-title{
+    margin: 0;  text-align: center;
+
+}
