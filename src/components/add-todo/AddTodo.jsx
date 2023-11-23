@@ -8,18 +8,16 @@ export default function AddTodo({ setTodoList, todoList }) {
   const id = () => Date.now().toString(36);
 
   const handleTitleInput = (e) => {
-    if (e.target.value.trim()) {
-      setTitleState(e.target.value.trim());
-    }
+      setTitleState(e.target.value);
   };
   const handlePriorityInput = (e) => {
     setPriorityState(e.target.value);
   };
 
   const addTodo = () => {
-    if (titleState) {
+    if (titleState.trim()) {
       const list = JSON.parse(todoList);
-      list.push({ id: id(), title: titleState, priority: prorityState });
+      list.push({ id: id(), title: titleState.trim(), priority: prorityState });
       setTodoList(JSON.stringify(list));
       setPriorityState(0);
       setTitleState('');
