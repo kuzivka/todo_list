@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/todo_list/static/css/main.addff02a.css",
+    "main.js": "/todo_list/static/js/main.7a65a667.js",
+    "static/media/buubles.png": "/todo_list/static/media/buubles.779bb2b010d551e2ebe0.png",
+    "static/media/Mask Group.png": "/todo_list/static/media/Mask Group.d332e85df1ede63cac9f.png",
+    "index.html": "/todo_list/index.html",
+    "main.addff02a.css.map": "/todo_list/static/css/main.addff02a.css.map",
+    "main.7a65a667.js.map": "/todo_list/static/js/main.7a65a667.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.addff02a.css",
+    "static/js/main.7a65a667.js"
+  ]
+}
