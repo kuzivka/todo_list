@@ -8,10 +8,20 @@ export default function AddTodo({ setTodoList, todoList }) {
   const id = () => Date.now().toString(36);
 
   const handleTitleInput = (e) => {
-      setTitleState(e.target.value);
+    setTitleState(e.target.value);
   };
   const handlePriorityInput = (e) => {
-    setPriorityState(e.target.value);
+    if (e.target.value > 999) {
+      setPriorityState(999);
+    } else if (e.target.value < 0) {
+      setPriorityState(0);
+    } else {
+      const value =
+        e.target.value === 0 || !e.target.value
+          ? 0
+          : e.target.value.replace(/^0+/, '');
+      setPriorityState(value);
+    }
   };
 
   const addTodo = () => {
@@ -43,7 +53,9 @@ export default function AddTodo({ setTodoList, todoList }) {
       <input
         className="priority-input"
         min={0}
+        max={100}
         value={prorityState}
+        step={1}
         type="number"
         onChange={(e) => debounce(handlePriorityInput(e))}
       />

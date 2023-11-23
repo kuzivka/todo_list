@@ -14,8 +14,7 @@ export default function ToDoList() {
   });
 
   useEffect(() => {
-    localStorage.setItem('todo-list', todoList)
-
+    localStorage.setItem('todo-list', todoList);
   }, [todoList]);
 
   return (

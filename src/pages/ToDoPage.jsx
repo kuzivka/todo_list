@@ -7,7 +7,7 @@ export default function ToDoPage() {
   return (
     <div className="todo-page">
       <ToDoList />
-      <img className="bubbles" src={Bubbles} alt="" />
+      <img className="bubbles" src={Bubbles} alt="bubles" />
     </div>
   );
 }
