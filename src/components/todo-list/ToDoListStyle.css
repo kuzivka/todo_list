@@ -7,10 +7,22 @@
   height: 653px;
   max-height: 90%;
   padding: 20px;
-   border-radius: 30px;
+  border-radius: 30px;
+
   background: url(../../assets/Mask\ Group.png);
 }
-.list-title{
-    margin: 0;  text-align: center;
-
+.list-title {
+  margin: 0 0 36px 0;
+  text-align: center;
+}
+.todos {
+  padding-top: 50px;
+  overflow-y: auto;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  max-height: 65%;
+}
+.todos::-webkit-scrollbar {
+  display: none;
 }
