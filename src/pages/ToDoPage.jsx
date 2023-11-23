@@ -1,6 +1,6 @@
 import React from 'react';
 import './ToDoPageStyle.css';
-import Bubbles from '../assets/bubbles.svg';
+import Bubbles from '../assets/buubles.png';
 import ToDoList from '../components/todo-list/ToDoList';
 
 export default function ToDoPage() {

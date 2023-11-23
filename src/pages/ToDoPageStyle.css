@@ -6,7 +6,9 @@
   overflow-x: hidden;
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 .bubbles {
   height: 90%;
+  object-fit: contain;
 }
