@@ -10,7 +10,7 @@ export default function AddTodo({ setTodoList, todoList }) {
   const handleTitleInput = (e) => {
     setTitleState(e.target.value);
   };
-  
+
   const handlePriorityInput = (e) => {
     if (e.target.value > 999) {
       setPriorityState(999);

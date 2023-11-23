@@ -1,6 +1,6 @@
-.add-todo-container{
-    display: flex;
-    justify-content: space-between;
+.add-todo-container {
+  display: flex;
+  justify-content: space-between;
 }
 .add-btn {
   background: none;
@@ -38,6 +38,7 @@
   align-items: center;
   text-align: center;
 }
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
